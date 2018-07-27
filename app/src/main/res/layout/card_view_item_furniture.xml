@@ -19,7 +19,7 @@
             android:id="@+id/furniture_image_id"
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            android:scaleType="fitCenter"
+            android:scaleType="centerInside"
             android:background="#2d2d2d"/>
         <TextView
             android:id="@+id/furniture_name_id"

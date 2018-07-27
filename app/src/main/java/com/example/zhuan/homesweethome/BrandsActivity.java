@@ -1,25 +1,19 @@
 package com.example.zhuan.homesweethome;
 
-import android.support.annotation.Nullable;
-import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainMenu2Fragment extends android.support.v4.app.Fragment {
+public class BrandsActivity extends android.support.v4.app.Fragment {
 
     List<Furniture> Furn;
 
@@ -39,7 +33,7 @@ public class MainMenu2Fragment extends android.support.v4.app.Fragment {
         Furn.add(new Furniture("Washing Machine", R.drawable.washing_machine));
         Furn.add(new Furniture("Double Bed", R.drawable.bed));
 
-        View view = inflater.inflate(R.layout.fragment_main_menu2, null);
+        View view = inflater.inflate(R.layout.fragment_brands, null);
 
         RecyclerView rv = view.findViewById(R.id.recycler_view);
         RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(getActivity(), Furn);
