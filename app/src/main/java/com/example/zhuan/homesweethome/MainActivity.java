@@ -3,6 +3,7 @@ package com.example.zhuan.homesweethome;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
@@ -16,10 +17,15 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        FloatingActionButton fab = findViewById(R.id.floatingActionButton5);
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        BotNavAnimationRemover.disableShiftMode(bottomNavigationView);
+
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(this);
 
-        loadFragment(new MainMenuFragment());
+        loadFragment(new MainMenu2Fragment());
     }
 
     private boolean loadFragment (Fragment fragment){
@@ -44,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 break;
 
             case R.id.navigation_browse:
-                fragment = new MainMenuFragment();
+                fragment = new MainMenu2Fragment();
                 break;
 
             case R.id.navigation_help:

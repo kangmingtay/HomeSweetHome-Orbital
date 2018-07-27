@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="24dp"
-    tools:context=".FurnitureActivity">
+    tools:context=".FurnitureActivity"
+    android:layout_weight="10">
 
     <TextView
         android:id="@+id/textView"
@@ -43,8 +44,11 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/slider"
         android:layout_width="match_parent"
+        android:layout_alignTop="@id/textView2"
+        android:layout_alignBottom="@+id/angry_btn"
         android:layout_height="385dp"
-        android:layout_marginTop="95dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="85dp"
         android:background="@color/colorPrimary">
 
     </android.support.v4.view.ViewPager>

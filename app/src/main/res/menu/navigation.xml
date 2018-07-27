@@ -2,18 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_my_collection"
-        android:icon="@android:drawable/ic_menu_slideshow"
-        android:title="@string/title_my_collection" />
+        android:id="@+id/navigation_browse"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Browse" />
 
     <item
-        android:id="@+id/navigation_browse"
-        android:icon="@android:drawable/ic_menu_search"
-        android:title="@string/title_browse" />
+        android:id="@+id/navigation_my_collection"
+        android:icon="@drawable/ic_save_black_24dp"
+        android:title="My Collection" />
+
+    <item
+        android:id="@+id/navigation_brands"
+        android:icon="@drawable/ic_view_list_black_24dp"
+        android:title="Brands"/>
 
     <item
         android:id="@+id/navigation_help"
-        android:icon="@android:drawable/ic_menu_help"
+        android:icon="@drawable/ic_help_black_24dp"
         android:title="@string/title_help" />
 
 </menu>
