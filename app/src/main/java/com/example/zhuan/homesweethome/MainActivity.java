@@ -49,6 +49,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 fragment = new MyCollectionFragment();
                 break;
 
+            case R.id.navigation_brands:
+                fragment = new BrandsActivity();
+
             case R.id.navigation_browse:
                 fragment = new MainMenu2Fragment();
                 break;

@@ -23,15 +23,11 @@ public class BrandsActivity extends android.support.v4.app.Fragment {
 
         Furn = new ArrayList<>();
 
-        Furn.add(new Furniture("Armchair", R.drawable.armchair));
-        Furn.add(new Furniture("Bookshelf", R.drawable.bookshelf));
-        Furn.add(new Furniture("Chair", R.drawable.chair));
-        Furn.add(new Furniture("Sofa", R.drawable.sofa));
-        Furn.add(new Furniture("Desk", R.drawable.desk));
-        Furn.add(new Furniture("Dining Table", R.drawable.table));
-        Furn.add(new Furniture("Refrigerator", R.drawable.fridge));
-        Furn.add(new Furniture("Washing Machine", R.drawable.washing_machine));
-        Furn.add(new Furniture("Double Bed", R.drawable.bed));
+        Furn.add(new Furniture("Ikea", R.drawable.ikea_logo));
+        Furn.add(new Furniture("King Koil", R.drawable.kingkoil_logo));
+        Furn.add(new Furniture("Scan Teak", R.drawable.scanteak_logo));
+        Furn.add(new Furniture("Naiise", R.drawable.naiise_logo));
+        Furn.add(new Furniture("Tempur", R.drawable.tempur_logo));
 
         View view = inflater.inflate(R.layout.fragment_brands, null);
 
@@ -39,7 +35,7 @@ public class BrandsActivity extends android.support.v4.app.Fragment {
         RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(getActivity(), Furn);
 
         GridLayout mainGrid;
-        rv.setLayoutManager(new GridLayoutManager(getActivity(), 2));
+        rv.setLayoutManager(new GridLayoutManager(getActivity(), 1));
         //mainGrid = rv.layout;
 
         rv.setAdapter(myAdapter);
