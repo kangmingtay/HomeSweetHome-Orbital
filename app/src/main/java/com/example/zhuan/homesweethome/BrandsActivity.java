@@ -31,7 +31,7 @@ public class BrandsActivity extends android.support.v4.app.Fragment {
 
         View view = inflater.inflate(R.layout.fragment_brands, null);
 
-        RecyclerView rv = view.findViewById(R.id.recycler_view);
+        RecyclerView rv = view.findViewById(R.id.recycler_view2);
         RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(getActivity(), Furn);
 
         GridLayout mainGrid;
