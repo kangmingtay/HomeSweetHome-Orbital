@@ -1,7 +1,6 @@
 package com.example.zhuan.homesweethome;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -15,12 +14,12 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
+public class IndividualRecyclerViewAdapter extends RecyclerView.Adapter<IndividualRecyclerViewAdapter.MyViewHolder> {
 
     private Context mContext;
-    private List<Furniture> mData;
+    private List<IndividualFurniture> mData;
 
-    public RecyclerViewAdapter(Context mContext, List<Furniture> mData) {
+    public IndividualRecyclerViewAdapter(Context mContext, List<IndividualFurniture> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }

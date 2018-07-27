@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         FloatingActionButton fab = findViewById(R.id.floatingActionButton5);
 
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.navigation);
         BotNavAnimationRemover.disableShiftMode(bottomNavigationView);
 
         BottomNavigationView navigation = findViewById(R.id.navigation);

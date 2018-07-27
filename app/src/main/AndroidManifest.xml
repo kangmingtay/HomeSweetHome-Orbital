@@ -46,7 +46,8 @@
         <activity
             android:name=".FurnitureScrolling"
             android:label="@string/title_activity_furniture_scrolling"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Main3Activity"></activity>
     </application>
 
 </manifest>
