@@ -20,12 +20,12 @@ public class Main3Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_scrolling);
 
         lstBook = new ArrayList<>();
         lstBook.add(new IndividualFurniture("The Vegitarian","Categorie Book","Description book",R.drawable.chair1));
 
-        RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerview_id);
+        RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerview_id2);
         IndividualRecyclerViewAdapter myAdapter = new IndividualRecyclerViewAdapter(this,lstBook);
         myrv.setLayoutManager(new GridLayoutManager(this,1));
         myrv.setAdapter(myAdapter);
