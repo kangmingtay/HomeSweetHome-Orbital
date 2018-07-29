@@ -49,7 +49,8 @@
         <FrameLayout
             android:id="@+id/fragment_container2"
             android:layout_width="match_parent"
-            android:layout_height="696dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"
             android:background="@drawable/bg5"
             app:layout_constraintBottom_toTopOf="@id/navigation"
             app:layout_constraintEnd_toEndOf="parent"
