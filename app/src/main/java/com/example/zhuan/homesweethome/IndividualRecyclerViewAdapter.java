@@ -1,6 +1,7 @@
 package com.example.zhuan.homesweethome;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -30,7 +31,7 @@ public class IndividualRecyclerViewAdapter extends RecyclerView.Adapter<Individu
 
         View view;
         LayoutInflater mInflater = LayoutInflater.from(mContext);
-        view = mInflater.inflate(R.layout.card_view_item_furniture, parent, false);
+        view = mInflater.inflate(R.layout.individual_furniture_card_view, parent, false);
         return new MyViewHolder(view);
     }
 
@@ -48,7 +49,8 @@ public class IndividualRecyclerViewAdapter extends RecyclerView.Adapter<Individu
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(mContext, )
+                Intent intent = new Intent(mContext, FurnitureActivity.class);
+                mContext.startActivity(intent);
             }
         });
 
@@ -68,9 +70,9 @@ public class IndividualRecyclerViewAdapter extends RecyclerView.Adapter<Individu
         public MyViewHolder(View itemView) {
             super(itemView);
 
-            tv_furniture_cat = itemView.findViewById(R.id.furniture_name_id);
-            iv_furniture = itemView.findViewById(R.id.furniture_image_id);
-            cardView = itemView.findViewById(R.id.cardView);
+            tv_furniture_cat = itemView.findViewById(R.id.furniture_name_id2);
+            iv_furniture = itemView.findViewById(R.id.furniture_image_id2);
+            cardView = itemView.findViewById(R.id.cardViewIndividual);
         }
     }
 }

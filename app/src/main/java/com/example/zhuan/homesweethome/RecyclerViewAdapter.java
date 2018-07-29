@@ -49,7 +49,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(mContext, )
+                Intent intent = new Intent(mContext, Main3Activity.class);
+                //intent.putExtra("Title", mData.get(position).getCategory());
+                //intent.putExtra("Thumbnail", mData.get(position).getThumbnail());
+                mContext.startActivity(intent);
             }
         });
 

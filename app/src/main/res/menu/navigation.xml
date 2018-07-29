@@ -12,6 +12,10 @@
         android:title="My Collection" />
 
     <item
+        android:id="@+id/empty"
+        android:title=""/>
+
+    <item
         android:id="@+id/navigation_brands"
         android:icon="@drawable/ic_view_list_black_24dp"
         android:title="Brands"/>
